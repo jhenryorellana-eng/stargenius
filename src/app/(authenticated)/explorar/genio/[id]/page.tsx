@@ -84,7 +84,7 @@ export default function GeniusDetailPage() {
       {/* Hero */}
       <div className="relative h-[420px] overflow-hidden">
         {genius.portraitUrl ? (
-          <img alt={genius.title} className="w-full h-full object-cover" src={genius.portraitUrl} />
+          <img alt={genius.name} className="w-full h-full object-cover" src={genius.portraitUrl} />
         ) : (
           <div className="w-full h-full bg-surface-dark flex items-center justify-center">
             <span className="material-icons-round text-8xl text-gray-600">school</span>
@@ -94,7 +94,7 @@ export default function GeniusDetailPage() {
 
         {/* Genius info overlay */}
         <div className="absolute bottom-0 left-0 right-0 p-6">
-          <h1 className="text-3xl font-extrabold text-white mb-2 text-shadow-lg">{genius.title}</h1>
+          <h1 className="text-3xl font-extrabold text-white mb-2 text-shadow-lg">{genius.name}</h1>
           <p className="text-base text-gray-300 mb-3 text-shadow">{genius.field}</p>
 
           <div className="flex items-center gap-4">

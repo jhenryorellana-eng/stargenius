@@ -17,7 +17,7 @@ export function GeniusCard({ genius, rank }: GeniusCardProps) {
       {/* Thumbnail */}
       <div className="w-16 h-20 rounded-lg overflow-hidden bg-surface-dark flex-shrink-0 relative">
         {genius.portraitUrl ? (
-          <img alt={genius.title} className="w-full h-full object-cover" src={genius.portraitUrl} />
+          <img alt={genius.name} className="w-full h-full object-cover" src={genius.portraitUrl} />
         ) : (
           <div className="w-full h-full flex items-center justify-center">
             <span className="material-icons-round text-2xl text-gray-600">school</span>
@@ -32,7 +32,7 @@ export function GeniusCard({ genius, rank }: GeniusCardProps) {
 
       {/* Info */}
       <div className="flex-1 min-w-0">
-        <p className="text-sm font-semibold text-white truncate">{genius.title}</p>
+        <p className="text-sm font-semibold text-white truncate">{genius.name}</p>
         <p className="text-xs text-gray-400 truncate">{genius.field}</p>
         <div className="flex items-center gap-3 mt-2">
           <div className="flex items-center gap-1">

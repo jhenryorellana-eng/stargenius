@@ -25,7 +25,7 @@ export function TrendingCarousel({ geniuses }: TrendingCarouselProps) {
             <div className="aspect-[2/3] rounded-xl overflow-hidden relative mb-3 bg-surface-dark shadow-lg shadow-primary/5 border border-white/5 transition-transform duration-300 group-hover:-translate-y-1">
               {genius.portraitUrl ? (
                 <img
-                  alt={genius.title}
+                  alt={genius.name}
                   className="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity"
                   src={genius.portraitUrl}
                 />
@@ -46,7 +46,7 @@ export function TrendingCarousel({ geniuses }: TrendingCarouselProps) {
               {/* Bottom info */}
               <div className="absolute bottom-0 left-0 right-0 p-3">
                 <p className="text-xs font-bold text-white leading-tight line-clamp-2">
-                  {genius.title}
+                  {genius.name}
                 </p>
                 <p className="text-[10px] text-gray-400 mt-1 truncate">{genius.field}</p>
                 <div className="flex items-center gap-1 mt-1.5">
