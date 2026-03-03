@@ -196,14 +196,14 @@ export default function GeniusDetailPage() {
               >
                 <div className="aspect-[2/3] rounded-xl overflow-hidden bg-surface-dark mb-2 border border-white/5 transition-transform group-hover:-translate-y-1">
                   {sg.portraitUrl ? (
-                    <img alt={sg.title} className="w-full h-full object-cover opacity-80 group-hover:opacity-100" src={sg.portraitUrl} />
+                    <img alt={sg.name} className="w-full h-full object-cover opacity-80 group-hover:opacity-100" src={sg.portraitUrl} />
                   ) : (
                     <div className="w-full h-full flex items-center justify-center">
                       <span className="material-icons-round text-3xl text-gray-600">school</span>
                     </div>
                   )}
                 </div>
-                <p className="text-xs font-semibold text-white line-clamp-2">{sg.title}</p>
+                <p className="text-xs font-semibold text-white line-clamp-2">{sg.name}</p>
                 <p className="text-[10px] text-gray-400 truncate">{sg.field}</p>
               </Link>
             ))}
