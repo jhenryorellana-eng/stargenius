@@ -40,6 +40,7 @@ export async function GET(request: NextRequest) {
       durationSeconds: i.duration_seconds,
       saveCount: i.save_count,
       geniusCount: i.genius_count,
+      viewCount: i.view_count,
       geniusName: i.geniuses.name,
       geniusField: i.geniuses.field,
     }));
